@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Havok Fitness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            background-color: #1E1E2F;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #F0F0F0;
+            padding-bottom: 80px;
+        }
+
+        h1 {
+            font-size: 50px;
+            background: linear-gradient(135deg, #FF6B6B, #556270);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            color: white;
+            max-width: 80%;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 30px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #F0F0F0;
+            font-weight: bold;
+        }
+
+        textarea, input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .contact {
+            color: white;
+            margin: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .contact a {
+            color: black;
+            text-decoration: none;
+            background-color: #71BBB2;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            background-color: #5fa19d;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #FF6B6B, #556270);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Havok Fitness</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form1.html">Registration</a>
+        <a href="instructor1.html">Instructors</a>
+        <a href="feedback1.html">Contact Us</a>
+        <a href="bmi1.html">BMI Calculator</a>
+    </nav>
+
+    <h2>Feedback Form</h2>
+
+    <form action="#" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="experience">How was your experience?</label>
+        <select id="experience" name="experience">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <div class="contact">
+        <p>Contact us on: <a href="mailto:support@havokfitness.com">Email</a></p>
+    </div>
+
+    <footer>
+        © 2025 Havok Fitness | All Rights Reserved
+    </footer>
+</body>
+</html>

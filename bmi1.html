@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | Havok Fitness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            background-color: #1E1E2F;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #F0F0F0;
+            padding-bottom: 80px;
+        }
+
+        h1 {
+            font-size: 50px;
+            background: linear-gradient(135deg, #FF6B6B, #556270);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            color: white;
+            max-width: 80%;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 30px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+
+        .bmi-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            max-width: 80%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        .bmi-link {
+            display: block;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #F0F0F0;
+            text-decoration: none;
+            padding: 10px;
+            background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+            border-radius: 10px;
+            max-width: 200px;
+            margin: 20px auto;
+        }
+
+        .bmi-link:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #FF6B6B, #556270);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Havok Fitness</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form1.html">Registration</a>
+        <a href="instructor1.html">Instructors</a>
+        <a href="feedback1.html">Contact Us</a>
+        <a href="bmi1.html">BMI Calculator</a>
+    </nav>
+
+    <h2>BMI Calculator</h2>
+
+    <div class="bmi-container">
+        <iframe src="https://www.calculator.net/bmi-calculator.html"></iframe>
+        <a class="bmi-link" href="https://www.calculator.net/bmi-calculator.html" target="_blank">Full BMI Calculator</a>
+    </div>
+
+    <footer>
+        © 2025 Havok Fitness | All Rights Reserved
+    </footer>
+</body>
+</html>
+

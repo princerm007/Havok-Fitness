@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Registration | Havok Fitness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            background-color: #1E1E2F;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #F0F0F0;
+            padding-bottom: 80px;
+        }
+
+        h1 {
+            font-size: 50px;
+            background: linear-gradient(135deg, #FF6B6B, #556270);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            color: white;
+            max-width: 80%;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 30px;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            background: linear-gradient(135deg, #6A82FB, #FC5C7D);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        fieldset {
+            border: 2px solid #6A82FB;
+            border-radius: 10px;
+            padding: 15px;
+            background-color: white;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        legend {
+            font-weight: bold;
+            color: black;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #6A82FB;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FC5C7D;
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #FF6B6B, #556270);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Havok Fitness</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="form1.html">Registration</a>
+        <a href="instructor1.html">Instructors</a>
+        <a href="feedback1.html">Contact Us</a>
+        <a href="bmi1.html">BMI Calculator</a>
+    </nav>
+
+    <h2>Fitness Registration</h2>
+
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Fitness Details</legend>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="goal">Fitness Goal:</label>
+            <select id="goal" name="goal">
+                <option value="weight_loss">Weight Loss</option>
+                <option value="muscle_gain">Muscle Gain</option>
+                <option value="endurance">Endurance</option>
+                <option value="general_fitness">General Fitness</option>
+            </select>
+        </fieldset>
+        
+        <input type="submit" value="Register">
+    </form>
+
+    <footer>
+        © 2025 Havok Fitness | All Rights Reserved
+    </footer>
+</body>
+</html>
